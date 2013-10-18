@@ -1,5 +1,13 @@
+REPORTER = list
 
 test:
-	./node_modules/.bin/mocha -u tdd
+  @NODE_ENV=test ./node_modules/.bin/mocha \
+    --reporter $(REPORTER) \
 
-.PHONY: test
+test-w:
+  @NODE_ENV=test ./node_modules/.bin/mocha \
+    --reporter $(REPORTER) \
+    --growl \
+    --watch
+
+.PHONY: test test-w

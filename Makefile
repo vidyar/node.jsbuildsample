@@ -9,5 +9,5 @@ test-w:
     --reporter $(REPORTER) \
     --growl \
     --watch
-
+mocha test/*.js -R spec.
 .PHONY: test test-w

@@ -1,1 +1,1 @@
-mocha test/*.js -R spec
+mocha test/*.js -R spec.

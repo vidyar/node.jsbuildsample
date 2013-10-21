@@ -3,10 +3,8 @@ node_js:
 language: node_js
 before_script: mkdir -p shippable/codecoverage
             - mkdir -p shippable/testresults
-install: npm install mocha
+
 after_script: 
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd  
-  - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage
-  - ./node_modules/.bin/_mocha report mocha --dir shippable/testresults
-script : make test  
+  - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecove
   

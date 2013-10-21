@@ -1,5 +1,5 @@
 REPORTER = list
-
+mocha test/*.js -R spec
 test:
   @NODE_ENV=test ./node_modules/.bin/mocha \
     --reporter $(REPORTER) \
@@ -9,5 +9,5 @@ test-w:
     --reporter $(REPORTER) \
     --growl \
     --watch
-mocha test/*.js -R spec.
+
 .PHONY: test test-w

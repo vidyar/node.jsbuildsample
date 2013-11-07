@@ -6,4 +6,4 @@ Install: npm install -g mocha
 after_script: 
   - ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- -u tdd  
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage
-  - ./node_modules/.bin/mocha -u tdd
+  - ./node_modules/.bin/mocha report cobertura --dir  shippable/testresults

@@ -7,7 +7,7 @@
   "main": "index",
   "engines": { "node": ">= 0.10.x" },
   "scripts": {
-    "test":  "make -f MakeFile test"
+    "test":  "make all"
   },
   "devDependencies": {
     "mocha": "1.12.x",

@@ -1,7 +1,7 @@
 node_js:
   - "0.10"
 language: node_js
-build_environment: ubuntu1304
+
 before_script: mkdir -p shippable/codecoverage
 install: npm install -g mocha
 after_script:
